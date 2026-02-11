@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Message For You ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("1B1wbx7H0WDOdY6Wm");
+  })();
+</script>
+
+<body>
+    <!-- Container for floating hearts -->
+    <div id="heart-container"></div>
+
+    <div class="main-container">
+        <div class="glass-card">
+            <div class="content">
+                <!-- Typewriter message will appear here -->
+                <h1 id="typewriter"></h1>
+                
+                <!-- Question will also be typed -->
+                <h2 id="question" class="question"></h2>
+
+                <div class="btn-wrapper">
+                    <button id="yesBtn" class="btn yes-btn">YES</button>
+                    <button id="noBtn" class="btn no-btn">NO (seems kinda off)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
